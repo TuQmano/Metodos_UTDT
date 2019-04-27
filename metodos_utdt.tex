@@ -1,0 +1,332 @@
+% This syllabus template was created by:
+% Brian R. Hall
+% Assistant Professor, Champlain College
+% www.brianrhall.net
+
+% Document settings
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{multirow}
+\usepackage{verbatim}
+\usepackage{setspace}
+\pagestyle{plain}
+\setlength\parindent{0pt}
+\usepackage{url}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+
+
+
+\begin{document}
+
+% Course information
+\begin{tabular}{ l l }
+  \multirow{2}{*}{\includegraphics[height=.75in,width=1.2in]{utdt.png}}  
+  \\
+ & \textbf{\large Maestría en Ciencia Política} 
+  \\ 
+  & Departamento de Ciencia Política y Estudios Internacionales
+  
+\end{tabular}
+\vspace{20mm}
+
+% Professor information
+\begin{tabular}{l}
+  \multirow{6}{*}  
+\textbf{\LARGE Herramientas cuantitativas para el análisis político}
+ \\
+  \\
+
+\large\textbf{Jueves, 19-22hs}
+ \\
+
+\large{(20 de septiembre al 29 de noviembre de 2018)}
+ 
+  \\
+  \\
+ \large \textbf{Juan Pablo Pilorget}
+ \\
+ \large \href{mailto:jpilorget@gmail.com}{jpilorget@gmail.com}
+ \\
+  \\
+ \large \textbf{Juan Pablo Ruiz Nicolini}
+ \\
+ \large \href{mailto:juan.ruiznicolini@mail.utdt.edu}{juan.ruiznicolini@mail.utdt.edu}
+\end{tabular}
+
+%\vspace{1cm}
+    %\begin{center} \textit{\textbf{[Este es un programa tentativo sujeto a modificaciones]}} \\
+%\end{center}
+
+\vspace{2cm}
+
+% Course details
+\textbf {\large \\ Descripción del taller:} en su introducción a los conceptos básicos de las ciencias sociales, Jon Elster utilizó la metáfora de \textit{Tuercas y Tornillos}\footnote{\textit{Nuts and Bolts for the Social Science}, Cambridge University Press, 1989 / \textit{Tuercas y Tornillos:una introducción a los conceptos básicos de las ciencias sociales}; Gedisa, 1990.} para fundamentar la importancia de entender los engranajes detrás de los fenómenos sociales. Partiendo de esta idea, el taller pretende introducir un conjunto de  herramientas para la investigación y el análisis de fenómenos políticos que podrían ser pensados como los lubricantes de las \textit{tuercas y tornillos}. 
+
+\vspace{.5cm}
+
+Utilizaremos el entorno de \verb=RStudio= - para el manejo de datos, análisis estadístico e ilustración de resultados-, \verb=RMarkdown= para la presentación de documentos y una variedad de recursos de fácil acceso para mejorar la comunicación del trabajo académico. Tener conocimientos básicos de estadística y comprensión lectora en inglés será de gran ayuda para los participantes.
+
+\vspace{.7cm}
+Entre las motivaciones del taller se destacan:
+\begin{itemize}
+ \itemsep-0.4em
+  \item  Introducir a los participantes en el descubrimiento y la utilización de herramientas de libre disposición y fácil acceso. 
+  \item Desarrollar mediante la práctica una metodología de aproximación inicial a los fenómenos políticos a través del análisis exploratorio de datos y la inferencia estadística. 
+\end{itemize}
+\clearpage
+\vspace{6mm}
+\textbf {\large Lecturas}\\
+
+Si bien a lo largo de las sesiones se compartirá material específico sobre los temas tratados, las siguientes lecturas fueron parte importante para el armado del programa: \\
+\\
+\emph{\textbf{*} \texttt{R} for Data Science}.
+\textbf {Autores:} Hadley Wickham, Garrett Grolemund;  O' Reilly, 2016 \\ \\
+\emph{\textbf{*} Political Analysis Using \texttt{R}}.
+\textbf {Autor:} James E. Monogan III;  Springer, 2015\\ \\
+\emph{\textbf{*} \textit{ggplot2: Elegant Graphics for Data Analysis}}.
+\textbf {Autor:} Hadley Wickman;  Springer, 2009 \\
+\\
+\emph{\textbf{*}La introducción no tan corta a \LaTeX}.
+\textbf {Autor:} Tobias Oetiker;  1995 \\
+
+\emph{\textbf{*}Computer Age Statistical Inference}.
+\textbf {Autores:} Bradley Efron, Trevor Hastie; Cambridge University Press, 2016 \\
+
+\vspace{2cm}
+
+\textbf {\large Objetivos del Taller} \\
+
+Al completar el curso se espera que los participantes:
+\begin{enumerate} \itemsep0.75em
+
+  \item Conozcan y utilicen \verb=R= + \verb=RStudio= como \textit{software} para la manipulación de datos estructurados y la confección de modelos estadísticos.
+  \item Sean capaces de producir gráficos y tablas de calidad en \verb=R= (utilizando \verb=ggplot2= y \verb=stargazer=, entre otras herramientas). 
+  \item Usen \LaTeX y \verb=RMarkdown= para la creación y edición de documentos (artículos, presentaciones, bibliografía, etcétera).
+
+  \item  Se familiaricen con herramientas adicionales para el trabajo con datos y la utilización de \textit{softwares} estadísticos (\verb=GitHub, StackOverflow, StackExchange=, etcétera). 
+\end{enumerate}
+\clearpage
+
+% Course Outline
+\textbf {\large Estructura del curso}:
+
+
+\vspace{.5cm}
+El contenido semanal podrá ser modificado en función del progreso de la clase. 
+
+\vspace{.5cm}
+
+
+\begin{table}[h!]
+\normalsize % The size of the table text can be changed depending on content. Remove if desired.
+\begin{tabular}{ | c | c | }
+\hline
+\textbf{Semana} & \textbf{Contenido} \\
+\hline
+Semana 1 & \begin{minipage}{.85\textwidth}
+\begin{itemize} \itemsep-0.4em
+	\vspace{1mm}
+	\item \textbf{Lubricar las \textit{Tuercas y Tornillos}}\\
+	Presentación del curso y trabajo preparatorio. 
+	\vspace{1mm}
+\end{itemize}
+\end{minipage} \\
+
+\hline\hline
+Semana 2 & \begin{minipage}{.85\textwidth}
+\begin{itemize} \itemsep-0.4em
+	\vspace{1mm}
+	\item \textbf{Introducción a \texttt{R}}.
+	 
+	\vspace{1mm}
+\end{itemize}
+\end{minipage} \\
+\hline
+Semana 3 & \begin{minipage}{.85\textwidth}
+\begin{itemize} \itemsep-0.4em
+	\vspace{1mm}
+	\item \textbf{Manejo de datos} en R (``\textit{data wrangling}").
+	\vspace{1mm}
+\end{itemize}
+\end{minipage} \\
+\hline
+Semana 4 & \begin{minipage}{.85\textwidth}
+\begin{itemize} \itemsep-0.4em
+	\vspace{1mm}
+	\item \textbf{Introducción a \textit{ggplot2}}\\
+	Estructura de la \textit{gramática de los gráficos} (aplicado a \verb=R=).
+	\vspace{1mm}
+\end{itemize}
+\end{minipage} \\
+\hline
+Semana 5 & \begin{minipage}{.85\textwidth}
+\begin{itemize} \itemsep-0.4em
+	\vspace{1mm}
+	\item \textbf{Reportes, presentaciones y documentos con \texttt{RMarkdown}}
+	\vspace{1mm}
+\end{itemize}
+\end{minipage} \\
+\hline
+Semana 6 & \begin{minipage}{.85\textwidth}
+\begin{itemize} \itemsep-0.4em
+	\vspace{1mm}
+	\item \textbf{Un paso más allá} con \textit{ggplot} para geolocalizar información.
+	\vspace{1mm}
+\end{itemize}
+\end{minipage} \\
+\hline\hline
+Semana 7 & \begin{minipage}{.85\textwidth}
+\begin{itemize} \itemsep-0.4em
+	\vspace{1mm}
+	\item \textbf{Estadística} descriptiva e inferencial para el análisis político.
+	\vspace{1mm}
+\end{itemize}
+\end{minipage} \\
+\hline
+Semana 8 & \begin{minipage}{.85\textwidth}
+\begin{itemize} \itemsep-0.4em
+	\vspace{1mm}
+	\item \textbf{Análisis de datos} en R:
+	 la regresión de \textit{Mínimos Cuadrados Ordinarios} (OLS) como puerta de entrada al mundo de las inferencias.
+	\vspace{1mm}
+\end{itemize}
+\end{minipage} \\
+\hline
+Semana 9 & \begin{minipage}{.85\textwidth}
+\begin{itemize} \itemsep-0.4em
+	\vspace{1mm}
+	\item \textbf{Análisis de datos} en R (II): \textit{Modelos lineales generalizados} (GLM).
+	\vspace{1mm}
+\end{itemize}
+\end{minipage} \\
+\hline \hline
+
+Semana 10 & \begin{minipage}{.85\textwidth}
+\begin{itemize} \itemsep-0.4em
+	\vspace{1mm}
+	\item \textbf{Introducción a tópicos intermedios y avanzados}.
+		
+	\vspace{1mm}
+\end{itemize}
+\end{minipage} \\
+\hline
+\hline
+
+Semana 11 & \begin{minipage}{.85\textwidth}
+\begin{itemize} \itemsep-0.4em
+	\vspace{1mm}
+	\item \textbf{Introducción a tópicos intermedios y avanzados (II)}.
+		
+	\vspace{1mm}
+\end{itemize}
+\end{minipage} \\
+\hline
+\hline
+\end{tabular} 
+\end{table}
+
+\clearpage
+
+\subsection*{Semana 1}
+        
+\textbf{(A)} Descripción de los 3 grandes módulos del taller: (1) Manejo  y análisis de datos; (2) presentación de resultados y (3) producción de documentos científicos. \textbf{(B)} Tareas preparatorias para el taller: programas necesarios + encuesta. 
+        
+\subsection*{Semana 2}
+
+¿Por qué \verb=R=? Funcionamiento general. Primeros pasos con \verb=RStudio= (consola, \textit{scripts}, \textit{enviroment}, ayuda, paquetes, etc.) 
+
+    \begin{itemize}
+        \item \textbf{Práctica}: procesamiento de la encuesta a participantes (estadísticas descriptivas y gráficos con  \verb=R base=).
+    \end{itemize}
+  
+\subsection*{Semana 3}
+        Presentación de \verb=tidyverse= para el manejo y limpieza de bases de datos (\textit{data wrangling}): 
+        
+    \begin{itemize}
+            \item Aplicación de \verb=readr= para importar bases de datos, \verb=tidyr= para limpiarlos y \verb=dplyr= para transformarlos.
+    \end{itemize}   
+    
+\subsection*{Semana 4}
+
+    \begin{itemize}
+        \item ¿Qué es la 
+        \textit{Gramática de los Gráficos}?
+        Leland Wilkinson y una nueva manera de visualizar la información estadística.
+        
+        \item ¿Cómo se aplica a \verb=R= mediante \verb=ggplot2=? 
+        \item Los 5 fantásticos de \verb=ggplot=: ejemplos prácticos para la creación de \textit{scatterplots, linegraphs, boxplots, histograms y barplots.}
+        \item \textbf{Ejemplo}: \textit{``El impacto de enchufar los votos"}, (Ruiz Nicolini, 2017).
+    \end{itemize}
+
+\subsection*{Semana 5}
+
+Uso de \verb=RMarkdown= para la producción de documentos científicos (artículos, informes y presentaciones) y su relación con \LaTeX: 
+
+    \begin{itemize}
+        \item Descripción de las herramientas y versiones disponibles.
+        \item Comandos básicos para la redacción de un documento.
+        \item Más allá del texto: fórmulas matemáticas, manejo de figuras, tablas, citas, bibliografía, referencias e índices en la preparación de documentos científicos.
+        \item Presentaciones usando \verb=beamer= y \verb=RMarkdown=.
+    \end{itemize}
+    
+\subsection*{Semana 6}
+Representación de información con mapas, grillas y polígonos. Ejemplos aplicados con:
+        \begin{itemize}
+            \item \verb=ggmap=
+            \item \verb=geofacet= 
+            \item \verb=sf=
+        \end{itemize}
+
+\subsection*{Semana 7}
+
+Los métodos de estadística descriptiva e inferencial    
+    \begin{itemize}
+        \item Medidas de centralidad y dispersión.
+        \item Técnicas exploratorias para el análisis: la reducción de dimensiones.
+        \item Tests de hipótesis: diferencia de medias e independencia de variables.
+        \item Coeficientes de correlación y asociaciones entre variables.
+    \end{itemize}   
+
+\subsection*{Semana 8}
+ Análisis estadístico en Ciencia Política. 
+    \begin{itemize}
+            \item La regresión lineal como primera aproximación a la detección de regularidades.
+            \item Anscombe y los riesgos de la regresión lineal.
+            \item Los supuestos y su verificación.
+            \item El problema de la multicolinealidad.
+            \item Variantes robustas a los Mínimos Cuadrados Ordinarios.
+            \item \textbf{Estadísticas descriptivas}. Ejercicio práctico: análisis de base de datos de encuesta a participantes de prueba piloto de voto electrónico en la provincia de Salta (Monogan, 2015).
+            \item \textbf{Análisis de regresión}. Estimando la democratización de los países mediante sus fronteras. 
+    \end{itemize}
+
+\subsection*{Semana 9}
+Primera aproximación a \textit{Modelos lineales generalizados} (GLM). 
+        
+    \begin{itemize}
+        \item ¿Qué es lo que se generaliza en un modelo \textit{generalizado}?
+        \item Los distintos sabores de regresiones: logística, Ridge y LASSO.
+        \item Regularización y variaciones en los atributos a predecir.
+        \item  \textbf{Práctica}: \textit{¿cómo predecir si una persona va a votar en las elecciones?}
+    \end{itemize}     
+    
+\subsection*{Semanas 10 y 11}
+
+Introducción a tópicos intermedios y avanzados de análisis estadístico:
+    \begin{itemize}
+        \item Regresiones multinivel con \verb=lme4=.
+        \item Regresiones bayesianas con \verb=rstanarm=.
+        \item Análisis de series de tiempo en modelos de regresión lineal.
+    \end{itemize}
+\end{document}
+
+
+
